@@ -9,7 +9,7 @@ import pytz
 import certifi
 
 # MongoDB connection
-MONGO_URI = st.secrets["mongo"]["uri"]  # Store in secrets.toml
+MONGO_URI = "mongodb+srv://maheshkumar17032k3:s4Lk5ve251iW6lml@yielddashboard.9wsy0ot.mongodb.net/?retryWrites=true&w=majority&appName=yielddashboard" # Store in secrets.toml
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
 db = client["yield_dashboard"]
 collection = db["yield_data"]
