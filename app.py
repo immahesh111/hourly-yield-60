@@ -114,7 +114,6 @@ with st.sidebar:
     st.header("Controls")
     selected_line = st.radio("Select Line", ["Line 01", "Line 03", "Line 08", "Line 09", "Line 10", "Line 12", "Line 15"])
     selected_date = st.date_input("Select Date", value=today.date())
-
 # Main content
 if selected_line:
     start_of_day = datetime.combine(selected_date, datetime.min.time()).replace(tzinfo=tz)
