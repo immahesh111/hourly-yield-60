@@ -101,7 +101,7 @@ today = datetime.now(tz)
 # Centered header with date and time
 st.markdown(f"""
 <div class='header'>
-    <h1>Real-Time Yield Dashboard</h1>
+    <h1>Real time Defect Analysis Dashboard</h1>
     <div class='date-time'>
         <span>{today.strftime('%Y-%m-%d')}</span>
         <span>{today.strftime('%H:%M:%S')}</span>
